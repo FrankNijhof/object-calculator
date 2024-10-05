@@ -1,0 +1,37 @@
+{
+    "listWithObjects" : [
+        {
+          "id": 0,
+          "listName": "Blood Angels",
+          "listItems":[
+            {"id":1 ,"amount": 1 ,"name":"Captain" , "value":80 },
+            {"id":2 ,"amount": 10 ,"name":"Intercessor Squad","value":200}
+          ]
+         
+        },
+        {
+          "id": 1,
+          "listName": "Grey Knights",
+          "listItems":[
+            {"id":1 ,"amount": 1 ,"name":"Brother Captain" , "value":80 },
+            {"id":2 ,"amount": 10 ,"name":"Paladin Squad","value":200}
+          ]
+        },
+        {
+          "id": 2,
+          "listName": "Grocery list",
+          "listItems":[
+            {"id":1 ,"amount": 1 ,"name":"Bread" , "value":5 }
+          ]
+        },
+        {
+          "id": 3,
+          "listName": "empty list"
+        }
+      ],
+
+    "savedItems":[
+        {"id":0 ,"amount": 1 ,"name":"Captain" , "value":80 },
+        {"id":1 ,"amount": 10 ,"name":"Intercessor Squad","value":200}
+    ]
+}
