@@ -10,11 +10,12 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 //*****FRONTEND***** */
-//TODO: show list items visually that they are connected/related to a colapsed list
+//TODO: give text a proper distinction between title of the items and the items itself
 //TODO: creating a new list, the popup should look bigger
 
 //******BACKEND******
 //TODO CREATE: new (empty) list
+//TODO Create: add to json the value type.
 //TODO UPDATE: list with updated with added items
 //TODO UPDATE: change an existing list name
 //TODO UPDATE: change an existing list item name
@@ -32,7 +33,7 @@ function App() {
 }
 
 
-
+//TODO: rework this component, could be more chopped up in different functions/methods
 function CreateListComponent()
 {
   const [listName, setListName] = useState("");
@@ -136,7 +137,7 @@ function ListItemComponent(obj)
     setOpen(!open);
   }
   //Check if a list has items
-  if(obj.listItems === undefined)
+  if(obj.listItems === undefined || obj.listItems < 1)
   {
     return(
       <div key={obj.id}>
@@ -158,15 +159,15 @@ function ListItemComponent(obj)
         <List key={obj.id}>
         {obj.listItems.map(item =>{
         return (<ListItem key={item.id}>
-          <ListItemText primary={item.name}/>
-          <ListItemText primary={item.amount}/>
-          <ListItemText primary={item.value}/>
+          <ListItemText secondary={item.name}/>
+          <ListItemText secondary={item.amount}/>
+          <ListItemText secondary={item.value +" "+ obj.valueType }/>
         </ListItem>
         )
             }
           )
         }
-        Total: {GetTotalValue(obj)}
+           Total {obj.valueType}: {GetTotalValue(obj)} 
         </List>
       </Collapse>
     </div>

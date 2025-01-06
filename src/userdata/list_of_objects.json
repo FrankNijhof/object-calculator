@@ -3,6 +3,7 @@
         {
           "id": 0,
           "listName": "Blood Angels",
+          "valueType": "points",
           "listItems":[
             {"id":1 ,"amount": 1 ,"name":"Captain" , "value":80 },
             {"id":2 ,"amount": 10 ,"name":"Intercessor Squad","value":200}
@@ -12,6 +13,7 @@
         {
           "id": 1,
           "listName": "Grey Knights",
+          "valueType": "points",
           "listItems":[
             {"id":1 ,"amount": 1 ,"name":"Brother Captain" , "value":80 },
             {"id":2 ,"amount": 10 ,"name":"Paladin Squad","value":200}
@@ -20,6 +22,7 @@
         {
           "id": 2,
           "listName": "Grocery list",
+          "valueType": "€",
           "listItems":[
             {"id":1 ,"amount": 1 ,"name":"Bread" , "value":5 }
           ]
